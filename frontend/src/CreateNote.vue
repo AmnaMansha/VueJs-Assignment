@@ -24,7 +24,7 @@ const createNote = () => {
 <template>
     <div class="note unimportant">
         
-        <input class="new-note-title" v-model="newNoteTitle" placeholder="Enter note title...">
+        <input class="new-note-title" v-model="newNoteTitle" placeholder="Enter note title..."   @keyup.enter="createNote">
         
         <div class="status-select">
             <div>
